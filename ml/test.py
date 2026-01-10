@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from preprocess import preprocess
-df = pd.read_csv("train.csv")
+df = pd.read_csv("data/train.csv")
 X, y = preprocess(df, training=True)
 model = joblib.load("artifacts/model.pkl")
 preds = model.predict(X)

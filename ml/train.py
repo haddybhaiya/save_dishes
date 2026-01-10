@@ -8,7 +8,7 @@ import joblib
 from preprocess import preprocess
 
 # Load data
-df = pd.read_csv("train.csv")
+df = pd.read_csv("data/train.csv")
 
 # Preprocess
 X, y = preprocess(df, training=True)
