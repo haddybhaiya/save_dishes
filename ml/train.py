@@ -30,6 +30,7 @@ print("R2 Score:", r2_score(y_test, preds))
 # Save model
 import os
 
+
 ARTIFACT_DIR = "ml/artifacts"
 os.makedirs(ARTIFACT_DIR, exist_ok=True)
 

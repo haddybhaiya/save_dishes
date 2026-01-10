@@ -8,8 +8,13 @@ class PredictionInput(BaseModel):
     waste_category: str
     day_of_week: int
     date: str
-    temperature: float
-    total_sales: float
+    temperature_C: float
+    humidity_percent: float
+    kitchen_staff: int
+    meals_served: int
+    past_waste_kg: float
+    special_event: int 
+    
 
 
 class PredictionOutput(BaseModel):
