@@ -28,4 +28,13 @@ print("MAE:", mean_absolute_error(y_test, preds))
 print("R2 Score:", r2_score(y_test, preds))
 
 # Save model
-joblib.dump(model, "artifacts/model.pkl")
+import os
+
+ARTIFACT_DIR = "ml/artifacts"
+os.makedirs(ARTIFACT_DIR, exist_ok=True)
+
+model_path = os.path.join(ARTIFACT_DIR, "model.pkl")
+joblib.dump(model, model_path)
+
+print(f"Model saved at {model_path}")
+
