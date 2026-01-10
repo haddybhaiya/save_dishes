@@ -1,9 +1,10 @@
 # ml/train.py
+import os
 import pandas as pd
+import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_absolute_error , r2_score
-import joblib
+from sklearn.metrics import mean_absolute_error, r2_score
 
 from preprocess import preprocess
 
@@ -28,9 +29,6 @@ print("MAE:", mean_absolute_error(y_test, preds))
 print("R2 Score:", r2_score(y_test, preds))
 
 # Save model
-import os
-
-
 ARTIFACT_DIR = "ml/artifacts"
 os.makedirs(ARTIFACT_DIR, exist_ok=True)
 
@@ -38,4 +36,3 @@ model_path = os.path.join(ARTIFACT_DIR, "model.pkl")
 joblib.dump(model, model_path)
 
 print(f"Model saved at {model_path}")
-
