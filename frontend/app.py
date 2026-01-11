@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import datetime
 
-API_URL = "https://save-dishes-api.onrender.com/predict"
+API_URL = "https://save-dishes-api.onrender.com"
 
 st.set_page_config(page_title="SaveDishes", layout="centered")
 
