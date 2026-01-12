@@ -5,7 +5,7 @@
 ---
 
 ## 🌐 Live Links (Copy-Paste Friendly)
-- Frontend: https://savedishes.streamlit.com </br>
+- Frontend: https://savedishes.streamlit.app </br>
 - API: https://save-dishes-api.onrender.com  (run this first) </br>
 - Docs: https://save-dishes-api.onrender.com/docs</br>
 
